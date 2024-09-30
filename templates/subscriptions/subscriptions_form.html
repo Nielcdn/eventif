@@ -1,0 +1,13 @@
+<h1>Formulário de Inscrição</h1>
+<form action="." method="post">
+    {% csrf_token %}
+    <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
+    {{ for.name }}
+    <label for="{{ form.cpf.id_for_label }}">{{ form.cpf.label }}</label>
+    {{ for.cpf }}
+    <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+    {{ for.email }}
+    <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
+    {{ for.phone }}
+    <input type="submit" value="Enviar">
+</form>
